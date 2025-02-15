@@ -1,0 +1,266 @@
+
+
+h1, h2 {
+    color: #0077b6; /* Azul pastel oscuro para títulos */
+    text-align: center; /* Centrar títulos */
+}
+
+/* Formularios */
+form {
+    background-color: #e0f3fc; /* Fondo blanco para formularios */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 90%;
+    max-width: 950px; /* Ancho máximo para formularios */
+    margin: 20px 0;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #0077b6; /* Azul pastel oscuro */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #005f8b; /* Azul más oscuro al pasar el mouse */
+}
+
+/* Estilos para la tabla */
+table {
+    width: 100%;
+    max-width: 1250px; /* Ajusta el ancho máximo de la tabla */
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+th, td {
+    padding: 12px;
+    text-align: center; /* Centrar texto en celdas */
+    border-bottom: 1px solid #ddd; /* Borde discreto */
+}
+
+th {
+    background-color: #0077b6; /* Azul pastel oscuro */
+    color: white;
+}
+
+/* Filas alternadas */
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Fondo gris claro para filas pares */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Efecto hover en filas */
+}
+
+
+/* Ajustes de ancho para las columnas */
+th:nth-child(1), td:nth-child(1) { /* Nombre */
+    width: 40%; /* Más amplio */
+}
+
+th:nth-child(2), td:nth-child(2) { /* CI */
+    width: 10%;
+}
+
+th:nth-child(3), td:nth-child(3) { /* Fecha de Nacimiento */
+    width: 10%;
+}
+
+th:nth-child(4), td:nth-child(4), /* Bautizo */
+th:nth-child(5), td:nth-child(5), /* Confirmación */
+th:nth-child(6), td:nth-child(6), /* Matrimonio */
+th:nth-child(7), td:nth-child(7) { /* Página */
+    width: 5%; /* Más estrecho */
+}
+
+th:nth-child(8), td:nth-child(8) { /* Acciones */
+    width: 20%; /* Más amplio para los botones */
+}
+
+/* Iconos para bautizo, confirmación y matrimonio */
+.icono {
+    font-size: 18px;
+}
+
+.icono.bien {
+    color: #28a745; /* Verde para "bien" (✔) */
+}
+
+.icono.mal {
+    color: #dc3545; /* Rojo para "mal" (✘) */
+}
+
+/* Estilos generales para el formulario de edición */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #dfe1f9; /* Fondo pastel azul claro */
+    color: #333; /* Texto oscuro para contraste */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar todo el contenido */
+}
+
+h1 {
+    color: #0077b6; /* Azul pastel oscuro para títulos */
+    text-align: center; /* Centrar títulos */
+    margin-bottom: 20px;
+}
+
+/* Contenedor del formulario */
+.form-container {
+    background-color: #e5f3ff; /* Fondo blanco para el formulario */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 100%;
+    max-width: 800px; /* Ancho máximo para el formulario */
+}
+
+/* Campos del formulario */
+.form-container input[type="text"],
+.form-container input[type="number"],
+.form-container input[type="date"] {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Checkboxes */
+.form-container label {
+    display: block;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.form-container input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Botón de guardar cambios */
+.form-container button {
+    background-color: #0077b6; /* Azul pastel oscuro */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form-container button:hover {
+    background-color: #005f8b; /* Azul más oscuro al pasar el mouse */
+}
+
+/* Estilos para el formulario en dos filas */
+.form-dos-filas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacio entre las filas */
+    background-color: #e0f3fc; /* Fondo blanco */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.fila {
+    display: flex;
+    gap: 10px; /* Espacio entre los campos */
+    align-items: center;
+}
+
+.fila input[type="text"],
+.fila input[type="number"],
+.fila input[type="date"] {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    flex: 1; /* Los campos ocupan el espacio disponible */
+    min-width: 120px; /* Ancho mínimo para evitar que se compriman demasiado */
+}
+
+.fila label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+}
+
+.fila button {
+    background-color: #0077b6; /* Azul pastel oscuro */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.fila button:hover {
+    background-color: #005f8b; /* Azul más oscuro al pasar el mouse */
+}
+
+/* Estilos para el enlace */
+a.btn-editar {
+    display: inline-block;
+    background-color: #fdf099; /* Color de fondo */
+    color: rgb(121, 81, 208); /* Color del texto */
+    font-size: 16px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  a.btn-editar:hover {
+    background-color: #f7f060; /* Cambio de color en hover */
+    transform: translateY(-2px);
+  }
+  
+/* Estilos para el enlace */
+a.btn-eliminar {
+    display: inline-block;
+    background-color: #feabab; /* Color de fondo */
+    color: rgb(85, 63, 173); /* Color del texto */
+    font-size: 16px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  a.btn-eliminar:hover {
+    background-color: #fe8a8a; /* Cambio de color en hover */
+    transform: translateY(-2px);
+  }
+  
